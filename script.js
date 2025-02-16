@@ -24,7 +24,7 @@ monthly.addEventListener("click", function () {
 });
 
 function updateSections(waktu, previous) {
-  fetch("/data.json")
+  fetch("https://dharul619.github.io/time-tracking-dashboard-main/data.json")
     .then((response) => response.json())
     .then((data) => {
       const hero = document.getElementById("hero");
